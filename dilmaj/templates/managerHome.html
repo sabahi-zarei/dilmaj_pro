@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}  
+
+<a href="{% url 'addWords' %}"> اضافه کردن لغات </a><br>
+<a href="{% url 'showWords' %}"> نمایش لغات</a><br>
+<a href="{% url 'searchWords' %}"> جستجوی لغات</a><br>
+{% endblock %}
+

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}  
+{% for w in words %}
+<h2>{{w.name}}
+<a href="{% url 'wordsDetail' w.id %}">جزئیات لغات </a><br>
+</h2>
+{% endfor %}
+{% endblock %}
